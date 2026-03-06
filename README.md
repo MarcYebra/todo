@@ -1,59 +1,179 @@
-# Todo
+# Angular TypeScript To-Do List App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+## Overview
 
-## Development server
+This project is a simple **To-Do List application built with Angular and TypeScript**. The application allows users to add, view, complete, and remove tasks through a clean web interface.
 
-To start a local development server, run:
+The goal of this project is to practice:
 
-```bash
+* Angular component architecture
+* TypeScript interfaces and typing
+* Basic state management in Angular
+* Event handling and data binding
+* Working with the Angular CLI
+
+This project is intended as a **learning exercise for developers exploring Angular and TypeScript**.
+
+---
+
+## Features
+
+* Add new tasks
+* Mark tasks as completed
+* Delete tasks
+* Display a list of tasks
+* Simple and responsive interface
+
+---
+
+## Technologies Used
+
+* Angular
+* TypeScript
+* HTML
+* CSS
+* Angular CLI
+* Node.js
+
+---
+
+## Project Structure
+
+```
+todo-app/
+│
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   └── todo/
+│   │   │       ├── todo.component.ts
+│   │   │       ├── todo.component.html
+│   │   │       └── todo.component.css
+│   │   │
+│   │   ├── models/
+│   │   │   └── task.ts
+│   │   │
+│   │   ├── services/
+│   │   │   └── task.service.ts
+│   │   │
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   └── app-routing.module.ts
+│   │
+│   └── index.html
+│
+├── package.json
+└── README.md
+```
+
+---
+
+## Installation
+
+### 1. Install Node.js
+
+Download and install Node.js from:
+
+https://nodejs.org
+
+Verify installation:
+
+```
+node -v
+npm -v
+```
+
+---
+
+### 2. Install Angular CLI
+
+```
+npm install -g @angular/cli
+```
+
+Verify installation:
+
+```
+ng version
+```
+
+---
+
+### 3. Clone the Repository
+
+```
+git clone https://github.com/yourusername/angular-todo-app.git
+```
+
+Navigate into the project:
+
+```
+cd angular-todo-app
+```
+
+---
+
+### 4. Install Dependencies
+
+```
+npm install
+```
+
+---
+
+### 5. Run the Development Server
+
+```
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser and navigate to:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
+## Example Task Model
+
+Example TypeScript interface used for tasks:
+
+```
+export interface Task {
+  id: number;
+  title: string;
+  completed: boolean;
+}
 ```
 
-## Building
+---
 
-To build the project run:
+## Future Improvements
 
-```bash
-ng build
-```
+Possible enhancements for the project:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* Persistent storage using Local Storage
+* Backend API integration
+* Task editing
+* Task categories or tags
+* Due dates
+* Authentication for multiple users
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Learning Goals
 
-```bash
-ng test
-```
+This project helps reinforce:
 
-## Running end-to-end tests
+* Angular component structure
+* TypeScript interfaces and type safety
+* Event binding and two-way data binding
+* Basic Angular services
+* Angular CLI workflow
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is for educational purposes and is free to use or modify.
